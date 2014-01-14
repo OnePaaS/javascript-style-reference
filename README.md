@@ -237,6 +237,7 @@
 	    "eqeqeq": false,//不强制使用===比较运算符
 	    "es3":true,//兼容es3规范，针对旧版浏览器编写的代码
 	    "esnext": false, //不使用最新的es6规范
+	    "expr": true,//允许未赋值的函数名表达式，例如console && console.log(1)
 	    "forin":false,//不强制过滤遍历对象继承的属性    
 	    "freeze":false,//不限制对内置对象的扩展
 	    "immed": true,//禁止未用括号包含立即执行函数
