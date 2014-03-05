@@ -1,11 +1,11 @@
-# Javascript代码及注释规范 2014/1/3 #
+# Javascript代码及注释规范 2014/3/5 #
 
 为规范前端开发代码，提高代码质量，特制定此文档，其中**声明**，**安全**和**分号**这三节是必须执行的，组件类必须遵循**注释规范**。
 
 ## 声明 ##
 
 - 变量声明必须加var关键字，严格控制作用域；
-- 使用驼峰式命名变量和函数，如：functionNamesLikeThis, variableNamesLikeThis, ClassNamesLikeThis,namespaceNamesLikeThis；
+- 建议使用驼峰式命名变量和函数，如：functionNamesLikeThis, variableNamesLikeThis, ClassNamesLikeThis,namespaceNamesLikeThis；
 - 私有成员变量和方法命名以下划线开头，如：var _this；
 - 常量定义单词全部大写，以下划线连接，但不要用const关键字来声明，如：SOME_CONSTANTS；
 - 函数参数大于3个时，应以对象形式作为参数集传递；
@@ -232,7 +232,7 @@
 	    "bitwise": false,//不检查位运算
 	    "browser": true,//通过浏览器内置的全局变量检测
 	    "devel":true,//允许对调试用的alert和console.log的调用
-	    "camelcase": false,//使用驼峰式命名
+	    "camelcase": false,//不强制验证驼峰式命名
 	    "curly": true,//强制使用花括号
 	    "eqeqeq": false,//不强制使用===比较运算符
 	    "es3":true,//兼容es3规范，针对旧版浏览器编写的代码
@@ -243,8 +243,8 @@
 	    "immed": true,//禁止未用括号包含立即执行函数
 	    "indent": false,//不强制缩进
 	    "latedef": true,//禁止先调用后定义
-	    "maxdepth":false,//代码块嵌套最多不超过3层
-	    "maxparams":false,//函数最多不超过3个参数
+	    "maxdepth":false,//不限制代码块嵌套层数
+	    "maxparams":false,//不限制函数参数个数
 	    "newcap": false,//不对首字母大写的函数强制使用new
 	    "noarg": false,//不禁止对arguments.caller和arguments.callee的调用
 	    "noempty":false,//不禁止空代码块
